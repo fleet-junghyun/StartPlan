@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bring_pick_date_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_bring_pick_date_exit"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:src="@drawable/ic_bring_pick_date_exit_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_bring_pick_date_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12월"
+            android:textColor="@color/blue_100"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/pick_date_calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_tileHeight="35dp"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="#11204d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_bring_pick_date_top_bar"
+        />
+
+    <View
+        android:id="@+id/v_pick_date_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pick_date_calendarView"
+        />
+
+    <TextView
+        android:id="@+id/tv_pick_date_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="날짜를 선택하세요."
+        app:layout_constraintStart_toStartOf="@id/v_pick_date_sub_title"
+        app:layout_constraintTop_toTopOf="@id/v_pick_date_sub_title"
+        app:layout_constraintBottom_toBottomOf="@id/v_pick_date_sub_title"
+        android:layout_marginStart="17dp"
+        />
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_pick_date_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/v_pick_date_sub_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+    </androidx.fragment.app.FragmentContainerView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

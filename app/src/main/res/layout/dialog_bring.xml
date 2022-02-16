@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="331dp"
+        android:background="@drawable/shape_add_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_dialog_bring_title"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_go_bring_21dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tv_bring_title"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_bring_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="불러오기"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="31dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_dialog_bring_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <View
+                android:id="@+id/v_bring_yesterday"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_bring_yesterday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="어제 불러오기"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/v_bring_yesterday"
+                app:layout_constraintTop_toTopOf="@id/v_bring_yesterday"
+                app:layout_constraintBottom_toBottomOf="@id/v_bring_yesterday"
+                android:layout_marginStart="24dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintBottom_toBottomOf="@id/v_bring_yesterday"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+         <View
+             android:id="@+id/v_bring_tomorrow"
+             android:layout_width="match_parent"
+             android:layout_height="52dp"
+             app:layout_constraintTop_toBottomOf="@id/v_bring_yesterday"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             />
+
+            <TextView
+                android:id="@+id/tv_bring_tomorrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내일 불러오기"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="@id/v_bring_tomorrow"
+                app:layout_constraintTop_toTopOf="@id/v_bring_tomorrow"
+                app:layout_constraintBottom_toBottomOf="@id/v_bring_tomorrow"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintBottom_toBottomOf="@id/v_bring_tomorrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <View
+                android:id="@+id/v_bring_pick_date"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                app:layout_constraintTop_toBottomOf="@id/v_bring_tomorrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_bring_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜로 불러오기"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="@id/v_bring_pick_date"
+                app:layout_constraintTop_toTopOf="@id/v_bring_pick_date"
+                app:layout_constraintBottom_toBottomOf="@id/v_bring_pick_date"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintBottom_toBottomOf="@id/v_bring_pick_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_bring_help_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아래의 선택된 날짜에 불러옵니다!"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/v_bring_pick_date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/gray_800"
+                />
+
+            <TextView
+                android:id="@+id/tv_bring_help_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray_800"
+                app:layout_constraintTop_toBottomOf="@id/tv_bring_help_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

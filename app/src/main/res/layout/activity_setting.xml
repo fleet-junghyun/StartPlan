@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_setting_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:paddingTop="34dp"
+        android:paddingEnd="7dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/ic_setting_back_btn_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_setting_back_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="설정"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iv_setting_back_btn"
+       app:layout_constraintBottom_toBottomOf="@id/iv_setting_back_btn" />
+
+    
+
+    <TextView
+        android:id="@+id/tv_setting_premium_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="60dp"
+        android:text="Premium"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_setting_back_title" />
+
+    <View
+        android:id="@+id/v_setting_premium_space"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/shape_setting_premium_btn"
+        app:layout_constraintTop_toBottomOf="@id/tv_setting_premium_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_setting_default_title"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+       android:id="@+id/iv_setting_premium_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/v_setting_premium_space"
+        app:layout_constraintTop_toTopOf="@id/v_setting_premium_space"
+        app:layout_constraintBottom_toBottomOf="@id/v_setting_premium_space"
+        android:src="@drawable/ic_setting_premium_30dp"
+        android:layout_marginStart="17dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_setting_premium_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프리미엄"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/iv_setting_premium_icon"
+        app:layout_constraintTop_toTopOf="@id/v_setting_premium_space"
+        app:layout_constraintBottom_toBottomOf="@id/v_setting_premium_space"
+        android:layout_marginStart="15dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_setting_default_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="기본 설정"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/tv_setting_premium_title"
+        app:layout_constraintTop_toBottomOf="@id/v_setting_premium_space" />
+
+
+    <View
+        android:id="@+id/v_setting_update_space"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/shape_setting_premium_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_setting_default_title" />
+
+    <ImageView
+        android:id="@+id/iv_setting_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:src="@drawable/ic_setting_update_30dp"
+        app:layout_constraintBottom_toBottomOf="@id/v_setting_update_space"
+        app:layout_constraintStart_toStartOf="@id/v_setting_update_space"
+        app:layout_constraintTop_toTopOf="@id/v_setting_update_space" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="이후 업데이트 내용이에요."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/v_setting_update_space"
+        app:layout_constraintStart_toEndOf="@id/iv_setting_update"
+        app:layout_constraintTop_toTopOf="@id/v_setting_update_space" />
+
+
+    <View
+        android:id="@+id/v_review_space"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/shape_setting_default_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_setting_update_space" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="리뷰를 부탁드려요. ⭐⭐⭐⭐⭐"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/v_review_space"
+        app:layout_constraintStart_toStartOf="@id/v_review_space"
+        app:layout_constraintTop_toTopOf="@id/v_review_space" />
+
+    <View
+        android:id="@+id/v_recommend_space"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/shape_setting_default_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_review_space" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="친구에게 공유해주세요.  🙏"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/v_recommend_space"
+        app:layout_constraintStart_toStartOf="@id/v_recommend_space"
+        app:layout_constraintTop_toTopOf="@id/v_recommend_space" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

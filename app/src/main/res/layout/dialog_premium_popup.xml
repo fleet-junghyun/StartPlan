@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_popup_premium"
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/shape_add_container"
+        >
+
+        <View
+            android:id="@+id/v_popup_premium_bar"
+            android:layout_width="64dp"
+            android:layout_height="3dp"
+            android:background="@drawable/shape_storage_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="9dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_popup_premium_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프리미엄"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/v_popup_premium_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_popup_premium_contents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="한번의 결제로 업그레이드 하세요."
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="16sp"
+            android:textColor="@color/gray_800"
+            app:layout_constraintTop_toBottomOf="@id/tv_popup_premium_title"
+            app:layout_constraintStart_toStartOf="@id/tv_popup_premium_title"
+            android:layout_marginTop="8dp"
+            />
+
+        <View
+            android:id="@+id/v_popup_premium_item_container"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:background="@drawable/shape_premium_menu_off"
+            app:layout_constraintTop_toBottomOf="@id/tv_popup_premium_contents"
+            app:layout_constraintStart_toStartOf="@id/tv_popup_premium_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <View
+            android:id="@+id/v_popup_premium_emoji_container"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="@id/v_popup_premium_item_container"
+            app:layout_constraintTop_toTopOf="@id/v_popup_premium_item_container"
+            app:layout_constraintBottom_toBottomOf="@id/v_popup_premium_item_container"
+            android:layout_marginStart="17dp"
+            android:background="@drawable/shape_schedule_item_emoji"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👏"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/v_popup_premium_emoji_container"
+            app:layout_constraintTop_toTopOf="@id/v_popup_premium_emoji_container"
+            app:layout_constraintBottom_toBottomOf="@id/v_popup_premium_emoji_container"
+            app:layout_constraintEnd_toEndOf="@id/v_popup_premium_emoji_container"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기능에 제한이 사라집니다."
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/v_popup_premium_emoji_container"
+            app:layout_constraintTop_toTopOf="@id/v_popup_premium_item_container"
+            app:layout_constraintBottom_toBottomOf="@id/v_popup_premium_item_container"
+            android:layout_marginStart="17dp"
+            />
+
+        <View
+            android:id="@+id/v_popup_premium_pay"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:background="@drawable/shape_review_dialog_ok"
+            app:layout_constraintTop_toTopOf="@id/tv_popup_premium_text"
+            app:layout_constraintStart_toStartOf="@id/tv_popup_premium_text"
+            app:layout_constraintEnd_toEndOf="@id/tv_popup_premium_text"
+            app:layout_constraintBottom_toBottomOf="@id/tv_popup_premium_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_popup_premium_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREMIUM UPGRADE"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_100"
+            app:layout_constraintTop_toBottomOf="@id/v_popup_premium_item_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="20dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

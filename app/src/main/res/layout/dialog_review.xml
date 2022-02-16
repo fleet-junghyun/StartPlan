@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_dialog_review"
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_add_container"
+        >
+
+        <TextView
+            android:id="@+id/tv_dialog_review_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좋은 하루를 보내고 계신가요?"
+            android:textColor="@color/blue_100"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_dialog_review_main_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="시작계획에 리뷰를 남겨주세요.\n\n더 열심히 하겠습니다! 🙇‍️"
+            android:textColor="@color/blue_100"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_dialog_review_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:id="@+id/tv_dialog_review_sub_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐⭐⭐⭐⭐   + ✍️"
+            android:textSize="16sp"
+            android:layout_marginTop="14dp"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@id/tv_dialog_review_main_contents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center_horizontal"
+            />
+
+
+        <View
+            android:id="@+id/v_dialog_review_answer_no"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:background="@drawable/shape_review_dialog_no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/v_dialog_review_answer_ok"
+            app:layout_constraintTop_toBottomOf="@id/tv_dialog_review_sub_contents"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_dialog_review_answer_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="괜찮아요"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/v_dialog_review_answer_no"
+            app:layout_constraintEnd_toEndOf="@id/v_dialog_review_answer_no"
+            app:layout_constraintTop_toTopOf="@id/v_dialog_review_answer_no"
+            app:layout_constraintBottom_toBottomOf="@id/v_dialog_review_answer_no"
+            />
+
+       <View
+            android:id="@+id/v_dialog_review_answer_ok"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+           android:background="@drawable/shape_review_dialog_ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/v_dialog_review_answer_no"
+            app:layout_constraintTop_toBottomOf="@id/tv_dialog_review_sub_contents"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="7dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_dialog_review_answer_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좋아요!"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/blue_100"
+            app:layout_constraintStart_toStartOf="@id/v_dialog_review_answer_ok"
+            app:layout_constraintEnd_toEndOf="@id/v_dialog_review_answer_ok"
+            app:layout_constraintTop_toTopOf="@id/v_dialog_review_answer_ok"
+            app:layout_constraintBottom_toBottomOf="@id/v_dialog_review_answer_ok"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

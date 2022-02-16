@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1077278244169",
+    "project_id": "start-plan",
+    "storage_bucket": "start-plan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077278244169:android:3c92def8d8ae3d3e5a2e98",
+        "android_client_info": {
+          "package_name": "com.fleet.startplan",
+          "package_name": "momanii.hani.supernova_emoji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077278244169-6k8jgenkai9s5vif16rsrp1c867bvqbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWGxOrsrB0Hs8X1qkLcz11iWxFwYt_lnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077278244169-6k8jgenkai9s5vif16rsrp1c867bvqbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

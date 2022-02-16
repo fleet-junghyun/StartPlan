@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="383dp"
+        android:background="@drawable/shape_add_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_dialog_send_title"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_go_dividing_line_24dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tv_send_title"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_send_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구분선"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="31dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_dialog_send_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <View
+                android:id="@+id/v_dividing_line_am"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="·  오전"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="@id/v_dividing_line_am"
+                app:layout_constraintTop_toTopOf="@id/v_dividing_line_am"
+                app:layout_constraintBottom_toBottomOf="@id/v_dividing_line_am"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_am"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+            <View
+                android:id="@+id/v_dividing_line_pm"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_am"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="·  오후"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="@id/v_dividing_line_pm"
+                app:layout_constraintTop_toTopOf="@id/v_dividing_line_pm"
+                app:layout_constraintBottom_toBottomOf="@id/v_dividing_line_pm"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_pm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+
+            <View
+                android:id="@+id/v_dividing_line_morning"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_pm"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☀️ 아침"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="@id/v_dividing_line_morning"
+                app:layout_constraintTop_toTopOf="@id/v_dividing_line_morning"
+                app:layout_constraintBottom_toBottomOf="@id/v_dividing_line_morning"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_morning"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+            <View
+                android:id="@+id/v_dividing_line_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_morning"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⛅ 점심"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="@id/v_dividing_line_lunch"
+                app:layout_constraintTop_toTopOf="@id/v_dividing_line_lunch"
+                app:layout_constraintBottom_toBottomOf="@id/v_dividing_line_lunch"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_lunch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <View
+                android:id="@+id/v_dividing_line_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_lunch"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌕 저녁"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="@id/v_dividing_line_dinner"
+                app:layout_constraintTop_toTopOf="@id/v_dividing_line_dinner"
+                app:layout_constraintBottom_toBottomOf="@id/v_dividing_line_dinner"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_500"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_dinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <View
+                android:id="@+id/v_dividing_line_dawn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_dividing_line_dinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌅 새벽"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="@id/v_dividing_line_dawn"
+                app:layout_constraintTop_toTopOf="@id/v_dividing_line_dawn"
+                app:layout_constraintBottom_toBottomOf="@id/v_dividing_line_dawn"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

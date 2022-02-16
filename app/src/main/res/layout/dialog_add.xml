@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:id="@+id/root_view"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_add_container"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/l_category_container"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@id/l_add_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_add_container"
+        >
+
+        <View
+            android:id="@+id/v_add_category_todo"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/shape_add_category_btn_on"
+            app:layout_constraintStart_toStartOf="@id/l_category_container"
+            app:layout_constraintTop_toTopOf="@+id/l_category_container"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_add_category_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_todo_20dp"
+            app:layout_constraintStart_toStartOf="@id/v_add_category_todo"
+            app:layout_constraintTop_toTopOf="@id/v_add_category_todo"
+            app:layout_constraintBottom_toBottomOf="@id/v_add_category_todo"
+            app:layout_constraintEnd_toEndOf="@id/v_add_category_todo"
+            />
+
+        <View
+            android:id="@+id/v_add_category_time"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/shape_add_category_btn_off"
+            android:layout_marginStart="13dp"
+            app:layout_constraintStart_toEndOf="@id/v_add_category_todo"
+            app:layout_constraintTop_toTopOf="@id/v_add_category_todo"
+            app:layout_constraintBottom_toBottomOf="@id/v_add_category_todo"
+            />
+
+        <ImageView
+            android:id="@+id/iv_add_category_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_time_18dp"
+            app:layout_constraintStart_toStartOf="@id/v_add_category_time"
+            app:layout_constraintEnd_toEndOf="@id/v_add_category_time"
+            app:layout_constraintTop_toTopOf="@id/v_add_category_time"
+            app:layout_constraintBottom_toBottomOf="@id/v_add_category_time"
+            />
+
+
+        <View
+            android:id="@+id/v_add_category_pin"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/shape_add_category_btn_off"
+            app:layout_constraintStart_toEndOf="@id/v_add_category_time"
+            app:layout_constraintTop_toTopOf="@id/v_add_category_time"
+            app:layout_constraintBottom_toBottomOf="@id/v_add_category_time"
+            android:layout_marginStart="13dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_add_category_d_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_pin_21dp"
+            app:layout_constraintStart_toStartOf="@id/v_add_category_pin"
+            app:layout_constraintTop_toTopOf="@id/v_add_category_pin"
+            app:layout_constraintEnd_toEndOf="@id/v_add_category_pin"
+            app:layout_constraintBottom_toBottomOf="@id/v_add_category_pin"
+            />
+
+        <View
+            android:id="@+id/v_add_category_d_day"
+            android:layout_height="28dp"
+            android:layout_width="28dp"
+            android:background="@drawable/shape_add_category_btn_off"
+            app:layout_constraintStart_toEndOf="@id/v_add_category_pin"
+            app:layout_constraintTop_toTopOf="@id/v_add_category_pin"
+            app:layout_constraintBottom_toBottomOf="@id/v_add_category_pin"
+            android:layout_marginStart="12dp"
+            />
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/ic_add_d_day_17dp"
+            app:layout_constraintStart_toStartOf="@id/v_add_category_d_day"
+            app:layout_constraintTop_toTopOf="@id/v_add_category_d_day"
+            app:layout_constraintBottom_toBottomOf="@id/v_add_category_d_day"
+            app:layout_constraintEnd_toEndOf="@id/v_add_category_d_day"
+            />
+
+        <View
+            android:id="@+id/v_add_category_start_day"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/shape_add_category_btn_off"
+            app:layout_constraintStart_toEndOf="@id/v_add_category_d_day"
+            app:layout_constraintTop_toTopOf="@id/v_add_category_d_day"
+            app:layout_constraintBottom_toBottomOf="@id/v_add_category_d_day"
+            android:layout_marginStart="12dp"
+            />
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/ic_add_start_day_17dp"
+            app:layout_constraintStart_toStartOf="@id/v_add_category_start_day"
+            app:layout_constraintEnd_toEndOf="@id/v_add_category_start_day"
+            app:layout_constraintTop_toTopOf="@id/v_add_category_start_day"
+            app:layout_constraintBottom_toBottomOf="@id/v_add_category_start_day"
+            />
+
+
+
+        <View
+            android:id="@+id/v_add_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintStart_toStartOf="@id/l_category_container"
+            app:layout_constraintEnd_toEndOf="@id/l_category_container"
+            app:layout_constraintTop_toBottomOf="@id/v_add_category_todo"
+            android:background="@color/gray_100"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/l_emoji_container"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_emoji_container"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/shape_add_emoji_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_emoji_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🖊️"
+            app:layout_constraintStart_toStartOf="@id/iv_emoji_container"
+            app:layout_constraintTop_toTopOf="@id/iv_emoji_container"
+            app:layout_constraintEnd_toEndOf="@id/iv_emoji_container"
+            app:layout_constraintBottom_toBottomOf="@id/iv_emoji_container"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/l_add_container"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/l_emoji_container"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+    </androidx.fragment.app.FragmentContainerView>
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:id="@+id/et_emoji"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/v_emoji_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/root_view"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

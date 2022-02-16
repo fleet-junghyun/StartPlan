@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_super_focus_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_go_super_focus_24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_super_focus_top_bar"
+            android:layout_marginEnd="6dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_super_focus_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초집중 모드"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_super_focus_close"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_super_focus_close_24dp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_super_focus_top_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+    <TextView
+        android:id="@+id/tv_super_focus_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이제 스마트폰 첫 화면에서 \n더 자주 확인하세요."
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="23dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/tv_super_focus_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초집중을 시작하는 순간\n앱을 켜지 않고 첫 화면에서 확인하실 수 있습니다.\n\n※ 단, 수정, 삭제 그리고 추가는 앱을 열어주세요."
+            android:textColor="@color/gray_600"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/tv_super_focus_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_super_focus_title"
+            android:layout_marginTop="16dp"
+            />
+
+        <View
+            android:id="@+id/v_super_focus_circle"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/shape_super_focus_circle"
+            app:layout_constraintTop_toBottomOf="@id/tv_super_focus_contents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="22dp"
+            />
+
+        <ImageView
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:src="@drawable/ic_super_focus_emoji_120dp"
+            app:layout_constraintTop_toTopOf="@id/v_super_focus_circle"
+            app:layout_constraintEnd_toEndOf="@id/v_super_focus_circle"
+            app:layout_constraintBottom_toBottomOf="@id/v_super_focus_circle"
+            app:layout_constraintStart_toStartOf="@id/v_super_focus_circle"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_super_focus_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@id/v_start_super_focus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center_horizontal"
+            />
+
+        <View
+            android:id="@+id/v_start_super_focus"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_over_the_lockscreen"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/shape_start_super_focus_btn"
+            />
+
+        <TextView
+            android:id="@+id/tv_start_super_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초집중 시작 !"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/v_start_super_focus"
+            app:layout_constraintEnd_toEndOf="@id/v_start_super_focus"
+            app:layout_constraintTop_toTopOf="@id/v_start_super_focus"
+            app:layout_constraintBottom_toBottomOf="@id/v_start_super_focus"
+            />
+
+        <TextView
+            android:id="@+id/tv_over_the_lockscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="잠금화면 위에 실행"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:textColor="@color/gray_750"
+            android:layout_marginBottom="57dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sw_over_the_lock_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_over_the_lockscreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="5dp"
+            app:kswTintColor="@color/gray_750"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

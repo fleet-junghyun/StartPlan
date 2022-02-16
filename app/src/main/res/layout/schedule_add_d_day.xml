@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:id="@+id/v_btn_dialog_date"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/shape_add_detail_off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/iv_d_day_add_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_d_day_24dp"
+        app:layout_constraintStart_toStartOf="@id/v_btn_dialog_date"
+        app:layout_constraintEnd_toEndOf="@id/v_btn_dialog_date"
+        app:layout_constraintTop_toTopOf="@id/v_btn_dialog_date"
+        app:layout_constraintBottom_toBottomOf="@id/v_btn_dialog_date"
+        />
+
+    <TextView
+        android:id="@+id/tv_d_day_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/v_btn_dialog_date"
+        app:layout_constraintEnd_toEndOf="@id/v_btn_dialog_date"
+        app:layout_constraintTop_toTopOf="@id/v_btn_dialog_date"
+        app:layout_constraintBottom_toBottomOf="@id/v_btn_dialog_date"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/et_add_d_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_100"
+        android:background="@null"
+        android:focusableInTouchMode="true"
+        android:hint="D-DAY를 추가하세요."
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textCursorDrawable="@drawable/shape_add_edit"
+        app:layout_constraintStart_toEndOf="@id/v_btn_dialog_date"
+        app:layout_constraintTop_toTopOf="@id/v_btn_dialog_date"
+        app:layout_constraintBottom_toBottomOf="@id/v_btn_dialog_date"
+        app:layout_constraintEnd_toStartOf="@id/iv_add_d_day_complete"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="7dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_add_d_day_complete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_add_complete_off_34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toEndOf="@id/et_add_d_day"
+        android:padding="13dp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

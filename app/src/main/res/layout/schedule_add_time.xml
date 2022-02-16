@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/v_btn_dialog_time"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/shape_add_detail_off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_todo_time_24dp"
+        app:layout_constraintStart_toStartOf="@id/v_btn_dialog_time"
+        app:layout_constraintEnd_toEndOf="@id/v_btn_dialog_time"
+        app:layout_constraintTop_toTopOf="@id/v_btn_dialog_time"
+        app:layout_constraintBottom_toBottomOf="@id/v_btn_dialog_time"
+        />
+
+    <EditText
+        android:id="@+id/et_add_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_100"
+        android:background="@null"
+        android:focusableInTouchMode="true"
+        android:hint="시간과 계획을 입력하세요."
+        android:ellipsize="end"
+      android:singleLine="true"
+        android:textSize="16sp"
+        android:textCursorDrawable="@drawable/shape_add_edit"
+        app:layout_constraintStart_toEndOf="@id/v_btn_dialog_time"
+        app:layout_constraintTop_toTopOf="@id/v_btn_dialog_time"
+        app:layout_constraintBottom_toBottomOf="@id/v_btn_dialog_time"
+        android:layout_marginStart="14dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_add_time_complete"
+        />
+
+    <ImageView
+        android:id="@+id/iv_add_time_complete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_add_complete_off_34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_add_time"
+        android:padding="13dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

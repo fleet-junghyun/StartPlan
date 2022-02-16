@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        android:id="@+id/et_add_pin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_100"
+        android:background="@null"
+        android:hint="상단에 고정할 수 있어요."
+        android:textSize="16sp"
+        android:focusableInTouchMode="true"
+        android:textCursorDrawable="@drawable/shape_add_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_add_pin_complete"
+        app:layout_constraintBottom_toBottomOf="@id/iv_add_pin_complete"
+        app:layout_constraintEnd_toStartOf="@id/iv_add_pin_complete"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_add_pin_complete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_add_complete_off_34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_add_pin"
+       android:padding="13dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

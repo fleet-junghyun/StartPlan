@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/iv_update_exit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="28dp"
+                android:src="@drawable/ic_update_exit_30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_update_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="67dp"
+                android:src="@drawable/ic_update_title_40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="업데이트 예정"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/iv_update_title"
+                app:layout_constraintStart_toEndOf="@id/iv_update_title"
+                app:layout_constraintTop_toTopOf="@id/iv_update_title" />
+
+
+            <TextView
+                android:id="@+id/tv_update_contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="5dp"
+                android:text="안녕하세요. 앱쟁이입니다.\n시작계획은\n여러분이 잠들기 전 이불 속에 들어가\n&quot;오늘 하루 잘 보냈다&quot;며\n좋은 하루를 보내기 위해\n제작했습니다.\n\n 여러분들의 하루가 저와 함께\n조금은 도움이 되기를 바랍니다.\n\n꿈은 날짜와 함께 적어놓으면 그것은 목표가 되고\n목표를 잘게 나누면 그것은 계획이 되며\n그 계획을 실행에 옮기면 꿈은 실현되는 것이다.\n - Greg S. Reid -"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_update_title" />
+
+
+            <View
+                android:id="@+id/v_update_item_1"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_item_complete_on"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_update_contents" />
+
+            <View
+                android:id="@+id/v_update_emoji_space_1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_1"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_1"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_1" />
+
+            <TextView
+                android:id="@+id/tv_update_emoji_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✌"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_1"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_1"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_1"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_1" />
+
+            <TextView
+                android:id="@+id/tv_update_contents_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="업데이트 예정 계획"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_1"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_1"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_1"
+                app:layout_constraintEnd_toEndOf="@id/v_update_item_1"/>
+
+
+            <View
+                android:id="@+id/v_update_item_2"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_item_complete_on"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_1" />
+
+            <View
+                android:id="@+id/v_update_emoji_space_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_2"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_2"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_2" />
+
+            <TextView
+                android:id="@+id/tv_update_emoji_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💻"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_2"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_2"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_2"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_2" />
+
+            <TextView
+                android:id="@+id/tv_update_contents_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="이모지 수정 업데이트"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_2"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_2"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_2"
+                app:layout_constraintEnd_toEndOf="@id/v_update_item_2"/>
+
+
+            <View
+                android:id="@+id/v_update_item_3"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_item_complete_on"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_2" />
+
+            <View
+                android:id="@+id/v_update_emoji_space_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_3"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_3"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_3" />
+
+            <TextView
+                android:id="@+id/tv_update_emoji_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📝"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_3"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_3"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_3"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_3" />
+
+            <TextView
+                android:id="@+id/tv_update_contents_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="날짜로 계획 불러오기"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_3"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_3"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_3"
+                app:layout_constraintEnd_toEndOf="@id/v_update_item_3"/>
+
+
+            <View
+                android:id="@+id/v_update_item_4"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_item_complete_on"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_3" />
+
+            <View
+                android:id="@+id/v_update_emoji_space_4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_4"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_4"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_4" />
+
+            <TextView
+                android:id="@+id/tv_update_emoji_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏲"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_4"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_4"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_4"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_4" />
+
+            <TextView
+                android:id="@+id/tv_update_contents_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="알림 기능"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_4"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_4"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" → 개인화 업데이트 예정"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tv_update_contents_4"
+                app:layout_constraintStart_toEndOf="@id/tv_update_contents_4"
+                app:layout_constraintEnd_toEndOf="@id/v_update_item_4"
+                app:layout_constraintTop_toTopOf="@id/tv_update_contents_4"/>
+
+
+            <View
+                android:id="@+id/v_update_item_5"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_item_complete_on"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_4" />
+
+            <View
+                android:id="@+id/v_update_emoji_space_5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_5"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_5"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_5" />
+
+            <TextView
+                android:id="@+id/tv_update_emoji_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📺"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_5"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_5"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_5"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_5" />
+
+            <TextView
+                android:id="@+id/tv_update_contents_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="광고 제거"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_5"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_5"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_5" />
+
+
+            <View
+                android:id="@+id/v_update_item_6"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_item_complete_on"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_5" />
+
+            <View
+                android:id="@+id/v_update_emoji_space_6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_6"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_6"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_6" />
+
+            <TextView
+                android:id="@+id/tv_update_emoji_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✍"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_6"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_6"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_6"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_6" />
+
+            <TextView
+                android:id="@+id/tv_update_contents_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="수정하기"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_6"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_6"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_6" />
+
+
+            <View
+                android:id="@+id/v_update_item_7"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_schedule_item_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_6" />
+
+            <View
+                android:id="@+id/v_update_emoji_space_7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_7"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_7"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_7" />
+
+            <TextView
+                android:id="@+id/tv_update_emoji_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📁"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_7"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_7"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_7"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_7" />
+
+            <TextView
+                android:id="@+id/tv_update_contents_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="위젯"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_7"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_7"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_7" />
+
+
+            <View
+                android:id="@+id/v_update_item_8"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_item_complete_on"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_7" />
+
+            <View
+                android:id="@+id/v_update_emoji_space_8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_8"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_8"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_8" />
+
+
+            <TextView
+                android:id="@+id/tv_update_emoji_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📈"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_8"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_8"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_8"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_8" />
+
+
+            <TextView
+                android:id="@+id/tv_update_contents_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="통계"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_8"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_8"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_8" />
+
+
+            <View
+                android:id="@+id/v_update_item_9"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_schedule_item_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_8" />
+
+
+            <View
+                android:id="@+id/v_update_emoji_space_9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_9"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_9"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_9" />
+
+
+            <TextView
+                android:id="@+id/tv_update_emoji_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_9"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_9"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_9"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_9" />
+
+
+            <TextView
+                android:id="@+id/tv_update_contents_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="달력으로 한 번에 보기"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_9"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_9"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_9" />
+
+            <View
+                android:id="@+id/v_update_item_10"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_item_complete_on"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_9" />
+
+
+            <View
+                android:id="@+id/v_update_emoji_space_10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_10"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_10"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_10" />
+
+
+            <TextView
+                android:id="@+id/tv_update_emoji_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📦"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_10"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_10"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_10"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_10" />
+
+
+            <TextView
+                android:id="@+id/tv_update_contents_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="루틴(그룹화)"
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_10"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_10"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_10" />
+
+
+            <View
+                android:id="@+id/v_update_item_11"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_schedule_item_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_10" />
+
+            <View
+                android:id="@+id/v_update_emoji_space_11"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/shape_schedule_item_emoji"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_11"
+                app:layout_constraintStart_toStartOf="@id/v_update_item_11"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_11" />
+
+            <TextView
+                android:id="@+id/tv_update_emoji_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💁‍♂"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_emoji_space_11"
+                app:layout_constraintEnd_toEndOf="@+id/v_update_emoji_space_11"
+                app:layout_constraintStart_toStartOf="@+id/v_update_emoji_space_11"
+                app:layout_constraintTop_toTopOf="@+id/v_update_emoji_space_11" />
+
+            <TextView
+                android:id="@+id/tv_update_contents_11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="17dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="사용해주셔서 감사합니다."
+                android:textColor="@color/blue_100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_item_11"
+                app:layout_constraintStart_toEndOf="@id/v_update_emoji_space_11"
+                app:layout_constraintTop_toTopOf="@id/v_update_item_11"
+                app:layout_constraintEnd_toEndOf="@id/v_update_item_11"/>
+
+            <TextView
+                android:id="@+id/tv_update_thank_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_horizontal"
+                android:text="이 앱 제작에 큰 도움을 주신 귤작가님 곰개발님 감사합니다."
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_open_source"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_item_11" />
+
+            <TextView
+                android:id="@+id/tv_open_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="오픈소스 라이선스"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_update_thank_you" />
+
+
+            <View
+                android:id="@+id/v_update_instagram"
+                android:layout_width="70dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/shape_schedule_item_container"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_open_source" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_update_instagram_40dp"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_instagram"
+                app:layout_constraintEnd_toEndOf="@id/v_update_instagram"
+                app:layout_constraintStart_toStartOf="@id/v_update_instagram"
+                app:layout_constraintTop_toTopOf="@id/v_update_instagram" />
+
+
+            <View
+                android:id="@+id/v_update_review"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/shape_item_complete_on"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_instagram"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/v_update_instagram"
+                app:layout_constraintTop_toTopOf="@id/v_update_instagram" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="리뷰로 응원하기"
+                android:textColor="@color/blue_100"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/v_update_review"
+                app:layout_constraintEnd_toEndOf="@id/v_update_review"
+                app:layout_constraintStart_toStartOf="@id/v_update_review"
+                app:layout_constraintTop_toTopOf="@id/v_update_review" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_update_instagram" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

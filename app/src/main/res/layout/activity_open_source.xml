@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_open_source_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_open_source_back_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_open_source_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="오픈소스 정보"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_open_super_nova_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="super-nova-emoji"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="38dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_open_source_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_open_super_nova_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[https://github.com/hani-momanii/SuperNova-Emoji]"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_open_super_nova_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_open_super_nova_title"
+        android:layout_marginTop="3dp"
+        />
+
+    <View
+        android:id="@+id/v_open_source_first_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_open_source_container"
+        app:layout_constraintTop_toTopOf="@id/tv_copy_emoji"
+        app:layout_constraintEnd_toEndOf="@id/tv_copy_emoji"
+        app:layout_constraintBottom_toBottomOf="@id/tv_copy_emoji"
+        app:layout_constraintStart_toStartOf="@id/tv_copy_emoji"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_copy_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_open_super_nova_contents"
+        android:text="Copyright 2016 Hani Al-Momani
+
+Licensed under the Apache License, Version 2.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an AS IS BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License."
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_open_horizontal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horizontal Calendar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/v_open_source_first_container"
+        app:layout_constraintStart_toStartOf="@id/tv_open_super_nova_title"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_open_horizontal_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:text="[https://github.com/Mulham-Raee/Horizontal-Calendar]"
+        app:layout_constraintTop_toBottomOf="@id/tv_open_horizontal_title"
+        app:layout_constraintStart_toStartOf="@id/tv_open_horizontal_title"
+        android:layout_marginTop="3dp"
+        />
+
+    <View
+        android:id="@+id/v_open_source_second_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_open_source_container"
+            app:layout_constraintTop_toTopOf="@id/tv_copy_horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/tv_copy_horizontal"
+        app:layout_constraintEnd_toEndOf="@id/tv_copy_horizontal"
+        app:layout_constraintStart_toStartOf="@id/tv_copy_horizontal"
+        />
+    <TextView
+        android:id="@+id/tv_copy_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_open_horizontal_contents"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+
+        android:text="Copyright 2017 Mulham Raes Licensed under the Apache License, Version 2.0 (the License) you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an AS IS BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License."
+        />
+
+    <TextView
+        android:id="@+id/tv_open_material_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Calendar View"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/v_open_source_second_container"
+        app:layout_constraintStart_toStartOf="@id/tv_open_super_nova_title"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_open_material_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:text="[https://github.com/prolificinteractive/material-calendarview]"
+        app:layout_constraintTop_toBottomOf="@id/tv_open_material_calendar"
+        app:layout_constraintStart_toStartOf="@id/tv_open_material_calendar"
+        android:layout_marginTop="3dp"
+        />
+
+    <View
+        android:id="@+id/v_open_source_third_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_open_source_container"
+        app:layout_constraintStart_toStartOf="@id/tv_copy_material"
+        app:layout_constraintTop_toTopOf="@id/tv_copy_material"
+        app:layout_constraintBottom_toBottomOf="@id/tv_copy_material"
+        app:layout_constraintEnd_toEndOf="@id/tv_copy_material"
+        />
+
+    <TextView
+        android:id="@+id/tv_copy_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+
+        app:layout_constraintTop_toTopOf="@id/tv_open_material_contents"
+        android:text="Copyright (c) 2018 Prolific Interactive
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the Software), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE."
+
+        />
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
