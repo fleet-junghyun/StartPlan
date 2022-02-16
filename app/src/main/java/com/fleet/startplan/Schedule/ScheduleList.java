@@ -189,4 +189,6 @@ public class ScheduleList extends Fragment {
         recentlySetData();
         mScheduleAdapter.notifyDataSetChanged();
     }
+
+    private void start(){}
 }
