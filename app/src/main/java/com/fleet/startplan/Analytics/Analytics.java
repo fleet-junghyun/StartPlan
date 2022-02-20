@@ -237,12 +237,7 @@ public class Analytics extends Fragment {
 
     private void attachList(String date, CalendarDay calendarDay) {
         AnalyticsList analyticsList = new AnalyticsList();
-        FragmentTransaction mFragmentTransaction = getParentFragmentManager().beginTransaction();
-        if (analyticsList.isAdded()) {
-            mFragmentTransaction.remove(analyticsList);
-            analyticsList = new AnalyticsList();
-        }
-        mFragmentTransaction.setReorderingAllowed(true);
+        FragmentTransaction mFragmentTransaction = getChildFragmentManager().beginTransaction();
         mFragmentTransaction.replace(R.id.fragment_analytics_list, analyticsList, "analytics_list");
         Bundle bundle = new Bundle();
         bundle.putString(Schedule.SELECTED_DATE, date);
@@ -252,9 +247,7 @@ public class Analytics extends Fragment {
         } catch (IllegalStateException e) {
             Toast.makeText(getContext(), "오류가 발생했어요. 죄송합니다. 다시 실행해주세요.", Toast.LENGTH_SHORT).show();
         }
-
         mSubTitle.setText(calendarDay.getMonth() + "월" + " " + calendarDay.getDay() + "일");
-
     }
 
 

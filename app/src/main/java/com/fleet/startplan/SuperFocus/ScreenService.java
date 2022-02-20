@@ -1,5 +1,6 @@
 package com.fleet.startplan.SuperFocus;
 
+import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -47,6 +48,7 @@ public class ScreenService extends Service {
             registerReceiver(mReceiver, filter);
         }
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        @SuppressLint("UnspecifiedImmutableFlag")
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, i, PendingIntent.FLAG_CANCEL_CURRENT);
         // oreo
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {

@@ -24,6 +24,7 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.fleet.startplan.Activity.MainActivity;
 import com.fleet.startplan.Model.Information;
 import com.fleet.startplan.Routine.RoutineActivity;
 import com.fleet.startplan.DB.SPDBHelper;

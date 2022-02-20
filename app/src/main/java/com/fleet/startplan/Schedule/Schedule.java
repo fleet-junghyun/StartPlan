@@ -173,14 +173,8 @@ public class Schedule extends Fragment {
     }
 
     private void attachFragmentList(String date) {
-
         ScheduleList scheduleList = new ScheduleList();
-        FragmentTransaction mFragmentTransaction = getParentFragmentManager().beginTransaction();
-        if (scheduleList.isAdded()) {
-            mFragmentTransaction.remove(scheduleList);
-            scheduleList = new ScheduleList();
-        }
-        mFragmentTransaction.setReorderingAllowed(true);
+        FragmentTransaction mFragmentTransaction = getChildFragmentManager().beginTransaction();
         mFragmentTransaction.replace(R.id.fragment_list, scheduleList, "fragment_list");
         Bundle bundle = new Bundle();
         bundle.putString(SELECTED_DATE, date);
