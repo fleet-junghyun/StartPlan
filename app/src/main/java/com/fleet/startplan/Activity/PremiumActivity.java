@@ -70,7 +70,7 @@ public class PremiumActivity extends AppCompatActivity {
 
     }
 
-    private PurchasesUpdatedListener purchasesUpdatedListener = (billingResult, list) -> {
+    private final PurchasesUpdatedListener purchasesUpdatedListener = (billingResult, list) -> {
         if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK && list != null) {
             for (Purchase purchase : list) {
                 handlePurchase(purchase);

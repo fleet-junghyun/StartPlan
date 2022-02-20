@@ -1,11 +1,12 @@
 package com.fleet.startplan.Menu;
 
-import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -44,6 +45,9 @@ public class DialogMenu extends BottomSheetDialogFragment {
         ConstraintLayout mGoDividingLine = v.findViewById(R.id.layout_menu_go_dividing_line);
         ConstraintLayout mGoSetting = v.findViewById(R.id.layout_menu_go_setting);
         ConstraintLayout mGoSuperFocus = v.findViewById(R.id.layout_menu_go_super_focus);
+        TextView mSuperFocusText = v.findViewById(R.id.tv_menu_super_focus);
+
+        mSuperFocusText.setPaintFlags(mSuperFocusText.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
         Bundle extra = this.getArguments();
         if (extra != null) {
@@ -159,14 +163,5 @@ public class DialogMenu extends BottomSheetDialogFragment {
         Bundle bundle = new Bundle();
         bundle.putString(Schedule.SELECTED_DATE, date);
         dialogStorage.setArguments(bundle);
-
-        getChildFragmentManager().executePendingTransactions();
-        dialogStorage.getDialog().setOnDismissListener(new DialogInterface.OnDismissListener() {
-            @Override
-            public void onDismiss(DialogInterface dialog) {
-                dismiss();
-            }
-        });
-
     }
 }

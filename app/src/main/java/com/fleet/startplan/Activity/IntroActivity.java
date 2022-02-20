@@ -13,8 +13,6 @@ import java.util.Random;
 
 public class IntroActivity extends AppCompatActivity {
 
-    private TextView mIntroComments;
-
     String[] str = {"오늘도 파이팅! \uD83D\uDC4A", "파이팅!\uD83E\uDD19", "계획이란 미래에 관한 현재의 결정이다.\n\n- 피터드러커",
             "우리는 할 수 있다! ✌️", "시간을 지배할 줄 아는 사람은\n인생을 지배할 줄 아는 사람이다. \n\n- 에센바흐", "오늘 가장 좋게 웃는 자는 \n최후에도 웃을 것이다.\n\n- 니체",
             "오늘이라는 날은 \n두 번 다시 오지 않는다는 것을 잊지 말라.\n\n- 단테", "오늘 할 수 있는 일에만 전력을 쏟으라 \n\n- 뉴튼",
@@ -31,7 +29,7 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
-        mIntroComments = findViewById(R.id.tv_intro_comments);
+        TextView mIntroComments = findViewById(R.id.tv_intro_comments);
 
         Random ram = new Random();
         int num = ram.nextInt(str.length);

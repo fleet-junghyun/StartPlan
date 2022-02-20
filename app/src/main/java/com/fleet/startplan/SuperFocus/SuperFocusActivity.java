@@ -58,7 +58,7 @@ public class SuperFocusActivity extends AppCompatActivity {
         }
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
             overTheText.setText(null);
-            switchButton.setThumbSize(-1,-1);
+            switchButton.setThumbSize(-1, -1);
             PreferenceManager.setBoolean(getApplicationContext(), PreferenceManager.OVER_THE_LOCK_SCREEN, false);
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -79,13 +79,12 @@ public class SuperFocusActivity extends AppCompatActivity {
         }
 
         boolean superFocus = PreferenceManager.getBoolean(getApplicationContext(), PreferenceManager.SUPER_FOCUS);
-
         if (!superFocus) {
             turnOnBtn();
         } else {
             turnOffBtn();
         }
-        superFocus = changeBtn;
+        changeBtn = superFocus;
 
         _start.setOnClickListener(new OnSingleClickListener() {
             @Override

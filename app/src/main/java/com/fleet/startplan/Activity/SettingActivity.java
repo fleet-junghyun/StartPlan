@@ -78,7 +78,6 @@ public class SettingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),PremiumActivity.class);
                 startActivity(intent);
-
             }
         });
     }
