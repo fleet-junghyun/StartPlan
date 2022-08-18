@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fleet.startplan">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
     <!--    first screen-->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -24,23 +24,66 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activity.MainActivity"    android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Activity.SettingActivity" android:screenOrientation="portrait" android:exported="true" ></activity>
-        <activity android:name=".Activity.UpdateActivity" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Activity.OpenSourceActivity" android:screenOrientation="portrait" android:exported="true" ></activity>
-        <activity android:name=".Activity.PremiumActivity" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Routine.RoutineActivity" android:screenOrientation="portrait"  android:exported="true"></activity>
-        <activity android:name=".Bring.BringYesterday" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Bring.BringTomorrow" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Bring.BringCalendarPickDate" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Bring.BringPickDate" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Send.SendYesterday" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Send.SendTomorrow" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Send.SendCalendarPickDate" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".Send.SendPickDate" android:screenOrientation="portrait" android:exported="true"></activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UpdateActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.OpenSourceActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PremiumActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Routine.RoutineActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Bring.BringYesterday"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Bring.BringTomorrow"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Bring.BringCalendarPickDate"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Bring.BringPickDate"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Send.SendYesterday"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".Send.SendTomorrow"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity android:name=".Send.SendCalendarPickDate" android:screenOrientation="portrait" android:exported="true"/>
+        <activity
+            android:name=".Send.SendPickDate"
+            android:screenOrientation="portrait"
+            android:exported="true" />
 
-        <activity android:name=".SuperFocus.SuperFocusActivity" android:screenOrientation="portrait" android:exported="true"></activity>
-        <activity android:name=".SuperFocus.LockScreenActivity" android:screenOrientation="portrait" android:exported="true"></activity>
+        <activity android:name=".SuperFocus.SuperFocusActivity" android:screenOrientation="portrait" android:exported="true"/>
+        <activity
+            android:name=".SuperFocus.LockScreenActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:exported="true" />
         <receiver
             android:name=".SuperFocus.ScreenReceiver"
             android:enabled="true"
@@ -55,7 +98,7 @@
         <service
             android:name=".SuperFocus.ScreenService"
             android:enabled="true"
-            android:permission="android.permission.SYSTEM_ALERT_WINDOW"></service>
+            android:permission="android.permission.SYSTEM_ALERT_WINDOW" />
 
 
         <meta-data

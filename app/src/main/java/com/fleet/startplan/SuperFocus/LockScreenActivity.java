@@ -231,4 +231,5 @@ public class LockScreenActivity extends AppCompatActivity implements LifecycleOb
             mAdmobView.destroy();
         }
     }
+
 }
